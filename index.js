@@ -1,13 +1,33 @@
 function isPalindrome(word) {
-  // Write your algorithm here
+  str2 = word.split("").reverse().join("");
+
+  if (word === str2) {
+    return true;
+  } else {
+    return false;
+  }
 }
 
+isPalindrome("abba");
+isPalindrome("racecar");
+isPalindrome("robot");
+isPalindrome("a");
+
+isPalindrome("ab");
 /* 
   Add your pseudocode here
+* reverse the string
+* compare original and reversed string
 */
 
 /*
   Add written explanation of your solution here
+  the function does the following:
+* uses split method to convert str into array of chars
+* reverses array
+* joins back chars into a str
+* compares original with reversed str
+* returns true if they match, false if they do not match
 */
 
 // You can run `node index.js` to view these console logs
